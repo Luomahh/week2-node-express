@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 API - Precious</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        h1 { margin-top: 0; }
+        .endpoint {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Week 2 Node.js API</h1>
+        <p><strong>Created by:</strong> Precious Ojiaku</p>
+        
+        <h2>Available Endpoints:</h2>
+        
+        <div class="endpoint">
+            <strong>GET /api</strong>
+            <p>Returns: "My Week 2 API!"</p>
+        </div>
+        
+        <div class="endpoint">
+            <strong>POST /user</strong>
+            <p>Body: <code>{"name": "Precious Ojiaku", "email": "preshie141@gmail.com"}</code></p>
+            <p>Returns: Hello message with name</p>
+        </div>
+        
+        <div class="endpoint">
+            <strong>GET /user/:id</strong>
+            <p>Example: <code>/user/123</code></p>
+            <p>Returns: User profile message</p>
+        </div>
+        
+        <h2>Test the API:</h2>
+        <p>Use Postman, curl, or any API testing tool to interact with these endpoints!</p>
+    </div>
+</body>
+</html>
